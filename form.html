@@ -9,9 +9,40 @@
 <body>
   <p><label>名前：<input type="text" placeholder="入力例"></label></p>
   <p><label>パスワード：<input type="password"></p></label>
+  <p><textarea name="textarea" id="" cols="30" rows="5">hello</textarea></p>
 
-  <textarea name="textarea" id="" cols="30" rows="5">hello</textarea>
+  <div>
+    <label for="color">好きな色</label>
+    <select id="color">
+      <option value="yellow" selected>黄</option>
+      <option value="red">赤</option>
+      <option value="blue">青</option>
+    </select>
+  </div>
 
+  <div>
+    <fieldset>
+      <legend>お使いのスマホ</legend>
+      <label><input type="checkbox" checked> iphone</label>
+      <label><input type="checkbox"> Android</label>
+      <label><input type="checkbox"> その他</label>
+    </fieldset>
+  </div>
   
+  <div>
+    <form action="process.php" method="post">
+      <fieldset>
+        <legend>お使いのスマホ</legend>
+        <label><input name="phone" type="radio" checked> iphone</label>
+        <label><input name="phone" type="radio"> Android</label>
+        <label><input name="phone" type="radio"> その他</label>
+        <button>送信</button>
+      </fieldset>
+    </form>
+  </div>
+  
+  <input type="button" value="OK" disabled>
+  <button>OK</button>
+
 </body>
 </html>
